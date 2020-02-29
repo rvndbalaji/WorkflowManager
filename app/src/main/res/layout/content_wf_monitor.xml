@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:animateLayoutChanges="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".AC_Monitor"
+        tools:showIn="@layout/app_bar_wf_monitor">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".Strt"
+        tools:showIn="@layout/activity_main">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:onClick="showMenu"
+            app:srcCompat="@drawable/ic_sort"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/futura_medium"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingStart="-25dp"
+            android:text="Workflows"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".Strt"
+        android:animateLayoutChanges="true"
+        tools:showIn="@layout/activity_main">
+
+        <EditText
+            android:id="@+id/cond"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:fontFamily="@font/futura_medium"
+            android:hint="% search %"
+            android:singleLine="true"
+            android:text="%dummy%"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A7A7A7"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/limit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/futura_book"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="number"
+            android:text="20"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/order"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="setOrder"
+            app:srcCompat="@drawable/ic_up"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".Strt"
+            tools:showIn="@layout/activity_main">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/wf_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:choiceMode="singleChoice"
+                android:smoothScrollbar="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.rvnd.bookshare.Strt">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>

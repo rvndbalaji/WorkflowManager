@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:padding="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AC_PairDisplay"
+    tools:showIn="@layout/activity_pair_display">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/futura_medium"
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"/>
+
+
+    <EditText
+        android:id="@+id/srch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/futura_medium"
+        android:hint="Search by PARAM_NAME"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A7A7A7"
+        android:textSize="16dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pair_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:smoothScrollbar="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.rvnd.wfman.AC_PairDisplay">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

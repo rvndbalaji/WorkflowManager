@@ -1,1 +1,2 @@
-# workflowmanager
+# WorkflowManager
+Quaero Workflow Manager

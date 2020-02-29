@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView android:id="@android:id/text1"
+                 xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                 android:ellipsize="marquee"
+                 android:fontFamily="@font/roboto"
+                 android:gravity="center_vertical"
+                 android:paddingBottom="5dp"
+                 android:paddingEnd="7dip"
+                 android:paddingStart="12dip"
+                 android:paddingTop="5dp"
+                 android:text="This is a sample option"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:textColor="?android:attr/textColorAlertDialogListItem"
+                 android:textSize="14sp"/>

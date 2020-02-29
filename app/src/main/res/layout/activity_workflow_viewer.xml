@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.rvnd.wfman.AC_Viewer">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/backy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="@color/colorPrimary"
+        fresco:actualImageScaleType="centerCrop"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        tools:context=".AC_Viewer">
+
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="20dp"
+            tools:context=".AC_Viewer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_round"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/wf_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_book"
+                    android:padding="5dp"
+                    android:text="WORKFLOW_ID"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/wf_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/futura_medium"
+                    android:padding="5dp"
+                    android:text="Workflow Name"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_round"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/futura_book"
+                        android:padding="5dp"
+                        android:text="WORKFLOW TYPE"/>
+
+                    <TextView
+                        android:id="@+id/wf_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/futura_medium"
+                        android:padding="5dp"
+                        android:paddingStart="5dp"
+                        android:text="--"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/futura_book"
+                        android:padding="5dp"
+                        android:text="WORKFLOW STATUS"/>
+
+                    <TextView
+                        android:id="@+id/wf_active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/futura_medium"
+                        android:padding="5dp"
+                        android:paddingStart="5dp"
+                        android:text="--"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/futura_book"
+                        android:padding="5dp"
+                        android:text="EXECUTION STATUS"/>
+
+                    <TextView
+                        android:id="@+id/wf_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/futura_bold"
+                        android:padding="5dp"
+                        android:paddingStart="5dp"
+                        android:text="--"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/futura_book"
+                        android:padding="5dp"
+                        android:text="LATEST INSTANCE"/>
+
+                    <TextView
+                        android:id="@+id/wf_inst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/futura_medium"
+                        android:padding="5dp"
+                        android:paddingStart="5dp"
+                        android:text="--"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/futura_book"
+                        android:padding="5dp"
+                        android:text="LAST STARTED"/>
+
+                    <TextView
+                        android:id="@+id/wf_started"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/futura_medium"
+                        android:padding="5dp"
+                        android:paddingStart="5dp"
+                        android:text="--"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/futura_book"
+                        android:padding="5dp"
+                        android:text="LAST ENDED"/>
+
+                    <TextView
+                        android:id="@+id/wf_ended"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/futura_medium"
+                        android:padding="5dp"
+                        android:paddingStart="5dp"
+                        android:text="--"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/futura_book"
+                        android:padding="5dp"
+                        android:text="UPDATED BY"/>
+
+                    <TextView
+                        android:id="@+id/wf_updated_by"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/futura_medium"
+                        android:padding="5dp"
+                        android:paddingStart="5dp"
+                        android:text="--"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/futura_book"
+                        android:padding="5dp"
+                        android:text="UPDATED ON"/>
+
+                    <TextView
+                        android:id="@+id/wf_updated_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/futura_medium"
+                        android:padding="5dp"
+                        android:paddingStart="5dp"
+                        android:text="--"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_round"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/activate_btn"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/green_round"
+                        android:onClick="activateWF"
+                        android:text="Activate"
+                        android:textColor="#ffffff"/>
+
+                    <Button
+                        android:id="@+id/modify_status"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/purple_round"
+                        android:onClick="modifyStatus"
+                        android:text="Modify status"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/wf_config"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/blublack_box"
+                        android:onClick="viewConfig"
+                        android:text="Config"
+                        android:textColor="#ffffff"/>
+
+                    <Button
+                        android:id="@+id/event_log"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/blublack_box"
+                        android:text="Event Log"
+                        android:onClick="viewEventLog"
+                        android:textColor="#ffffff"/>
+
+                    <Button
+                        android:id="@+id/precompile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/blublack_box"
+                        android:onClick="viewPrecompile"
+                        android:text="Precompile"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:backgroundTint="#4CAF50"
+            app:borderWidth="0dp"
+            app:layout_anchor="@+id/content"
+            app:layout_anchorGravity="bottom|right"
+            app:srcCompat="@drawable/ic_refresh"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

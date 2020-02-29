@@ -1,0 +1,22 @@
+TODO
+
+Version 1.0
+
+    Small:
+        1. Write a background service that monitors when the app is closed and terminates the VPN connection
+        2. Settings screen that allows users to choose from a variety of configuration options
+        3. Allow editing of existing Servers
+        4. Allow deletion of servers
+        6. Implement workflow filtering by Update User
+        7. Implement proper select/hold animation colors on buttons and list
+        8. Exception thrown when workflow limit is too high for Integers
+        9. Indication if server jobs are running
+        10. Decide what happens when other users login thru the same phone. What happens to the previous user's data?
+
+    Large:
+        1. Integrate with Firebase to allow analytics
+
+
+Version 2.0
+    1. Allow user to subscribe to workflows that notify him about completions, failures..etc
+    2.

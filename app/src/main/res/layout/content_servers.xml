@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:layout_marginTop="30dp"
+    android:padding="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AC_Servers"
+    tools:showIn="@layout/activity_servers">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/futura_medium"
+        android:gravity="center"
+        android:text="Your Servers"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"/>
+
+
+    <android.support.v7.widget.RecyclerView android:id="@+id/server_list"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="100dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@android:color/transparent"
+                                            android:choiceMode="singleChoice"
+                                            android:smoothScrollbar="true"
+                                            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                                            tools:context="com.rvnd.wfman.AC_Servers">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

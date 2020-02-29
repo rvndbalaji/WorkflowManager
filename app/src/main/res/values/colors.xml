@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#263238</color>
+    <color name="colorPrimaryDark">#14141D</color>
+    <color name="colorAccent">#64b5f6</color>
+    <color name="back_accent">#a628364d</color>
+
+    <color name="m_dark_pink">#FF5B61</color>
+    <color name="m_dark_teal">#0E7886</color>
+    <color name="m_yellow">#FFCA4F</color>
+    <color name="m_dark_bluegray">#6B7F9E</color>
+
+    <color name="m_blue">#0E94D7</color>
+    <color name="m_light_orange">#FF7400</color>
+    <color name="textcolor">#ffffff</color>
+
+    <color name="light_white">#E0E0E0</color>
+
+</resources>
